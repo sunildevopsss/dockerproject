@@ -1,0 +1,15 @@
+version: '3'
+services:
+  loans:
+    image: sunildevopsss/loans
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 2
+
+  flights:
+    image: sunildevopsss/flights
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 2
